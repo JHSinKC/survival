@@ -1,0 +1,484 @@
+﻿
+body {
+	font-family:Helvetica, verdana, arial, sans-serif;
+	color:#000033;
+	a:link {color:#ff0000};
+	a:visited {color:#330066};
+	a:hover {color:#0033cc};
+	background-color:#b5e5d5;  /* that's my green background color */
+}
+
+#menu ul, #menu li {
+	line-height:22px;
+	text-align:left;
+	font-size:14px;
+}
+
+/* These are for the menu system */
+
+#menu {
+	list-style:none;
+	position: absolute;
+	left: 0px;
+	width:750px;
+	margin:0 auto;
+	height:45px;
+	padding:5px 30px;
+	/* rounded corners for different browser support */
+
+    border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	/* css3 gradient */
+    background:#333333;
+	background: -moz-linear-gradient(#444444, #111111) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(#444444), to(#111111));
+	/* css3 borders */
+
+    border: 1px solid #9C9C9C;
+	box-shadow:inset 0px 0px 1px #e8edf0;  /* light grey shadow */
+	-moz-box-shadow:inset 0px 0px 1px #e8edf0;
+	-webkit-box-shadow:inset 0px 0px 1px #e8edf0;
+}
+/* tab starts here */
+
+#menu li {
+	float:left;
+	display:block;
+	position:relative;
+	text-align:center;
+	padding:4px 10px;
+	margin:7px 30px 0 0;
+	border:none;
+}
+#menu li:hover {
+	border:1px solid #b7b7b7;
+	padding:4px 9px;
+	/*rounded corners  */
+
+    border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	/* css 3 gradient */
+    background:#fff;
+	background: -moz-linear-gradient(center top, #FFFFFF, #EDEDED) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EDEDED));
+}
+#menu li a {
+	font-size:14px;
+	color: #ffffff;  /* 999999 medium grey for text */
+	display:block;
+	outline:0;
+	text-decoration:none;
+}
+#menu li:hover a {
+	color:#161616;
+}
+/* menu containers here  */
+
+#menu .menu-container-1,#menu .menu-container-2,#menu .menu-container-3,#menu .menu-container-4 {
+	margin:4px auto;
+	float:left;
+	position:absolute;
+	left:-999em;
+	text-align:left;
+	padding:10px 5px;
+	border:1px solid #b7b7b7;
+	border-top:none;
+	/* rounded corners */
+
+    border-radius:0 5px 5px 5px;
+	-moz-border-radius:0 5px 5px 5px;
+	-webkit-border-radius:0 5px 5px 5px;
+	/* gradient */
+    background:#444444;
+	background: -moz-linear-gradient(center top, #444444, #111111) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(#444444), to(#111111));
+}
+#menu .menu-container-1 {
+	width:140px;
+}
+#menu .menu-container-2 {
+	width:280px;
+}
+#menu .menu-container-3 {
+	width:420px;
+}
+#menu .menu-container-4 {
+	width:560px;
+}
+#menu li:hover .menu-container-1, #menu li:hover .menu-container-2, #menu li:hover .menu-container-3, #menu li:hover .menu-container-4 {
+	top:auto;
+	left:-1px;
+}
+/* columns ici */
+
+#menu .column-1, #menu .column-2 {
+	display:inline;
+	float:left;
+	position:relative;
+	margin:0 5px;
+}
+#menu .column-1 {
+	width:130px;
+}
+#menu .column-2 {
+	width:260px;
+}
+#menu .column-3 {
+	width:390px;
+}
+#menu .column-4 {
+	width:520px;
+}
+/* right menu */
+
+#menu .menu-right {
+	float:right;
+	float:left;
+	margin-right:0px;
+}
+#menu li .align-right {
+	/*rounded corners */
+
+    border-radius:5px 0 5px 5px;
+	-moz-border-radius:5px 0 5px 5px;
+	-webkit-border-radius:5px 0 5px 5px;
+}
+#menu li:hover .align-right {
+	left:auto;
+	right:-1px;
+	top:auto;
+}
+/* menu h2, h3, p, etc.... */
+
+#menu p, #menu h2, #menu h3, #menu ul li {
+	line-height:21px;
+	font-size:12px;
+	text-align:left;
+}
+#menu p {
+	line-height:18px;
+	margin-bottom:10px;
+	color:#F2E8E8;
+}
+#menu h3, #menu h2 {
+	font-size:11px;
+	margin:7px 0 14px 0;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	color: #ffffff;  /* 999999 medium grey for text */
+}
+#menu li:hover div a {
+	box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+	color: #ffffff;  /* 666666 medium grey for text */
+	font-size: 11px;
+	padding-left: 6px;
+}
+#menu li:hover div a:hover {
+	background: -moz-linear-gradient(#04ACEC, #0186BA) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA));
+	color: #FAFAFA;   /* almost white */
+	background:#04ACEC;
+}
+#menu li ul {
+	box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+	list-style:none;
+	padding:0;
+	margin-bottom:12px;
+}
+#menu li ul li {
+	float: none;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: left;
+	width: 130px;
+}
+#menu li ul li:hover {
+	background: none;
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/* login here */
+
+#menu .form {
+	margin:10px 0 0 45px;
+}
+#menu input {
+	color:#e9e9e9;
+	font-size:12px;
+	outline:0 none;
+	padding:9px;
+	/* gradient */
+    background:#6e6e6e;
+	background:-moz-linear-gradient(top, #888, #575757);
+	background:-webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+	/* css3 borders */
+    border:1px solid #555;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	/* css3 shadow effect */
+    -moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+#menu input:focus {
+	background: none repeat scroll 0 0 #313131;
+}
+#menu input:hover {
+	border-color: #000000;
+}
+#menu .submit input {
+	background: -moz-linear-gradient(center top, #444444, #111111) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(#444444), to(#111111));
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 1px #EDF9FF inset;
+	color: #FADDDE;
+	padding: 9px;
+	width: 90px;
+}
+#menu .submit input:hover {
+	background: -moz-linear-gradient(center top, #444444, #3D3A3A) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(#444444), to(#3D3A3A));
+	cursor: pointer;
+}
+#menu .submit input:active {
+	background: -moz-linear-gradient(center top, #444444, #111111) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(#444444), to(#111111));
+	border: 1px solid #9C9C9C;
+	color: #9C9C9C;
+}
+footer {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.04);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 3px 1px rgba(0, 0, 0, 0.02) inset, 0 1px 0 white;
+	padding: 1.5em;
+	bottom: 0;
+	display: block;
+	height: 40px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+footer h2 {
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 1px 0 white;
+	font-size: 20px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -400px;
+
+	position: absolute;
+	width: 500px;
+	text-shadow: 1px #000000;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+}
+
+
+/* These are JHS modifications */
+
+hr {
+position: absolute;
+display: block;
+width: 800px;
+left: 1px;
+border-top-color: red;
+border-top-style: solid;
+border-top-width: 1px;
+}
+
+.elementheader
+{
+font-size:14pt;
+width:800px;
+background-color:#ADD8E6; /* light blue */
+font-weight:bold;
+font-variant:large-caps;
+font-family:Century Gothic, Helvetica, sans-serif;
+}
+.elementdescription
+{
+width:800px;
+background-color:#E0FFFF; /* light cyan */
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:12pt;
+}
+.faqheader
+{
+font-size:14pt;
+width:800px;
+background-color:#778899; /* light slate grey */
+font-weight:bold;
+font-variant:large-caps;
+font-family:Century Gothic, Helvetica, sans-serif;
+}
+.faqdescription
+{
+width:800px;
+background-color:#B0C4DE; /* light steel blue */
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:12pt;
+}
+dt
+{
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:11pt;
+color:#000000;
+font-style:normal;
+font-weight:bold;
+}
+.newhtml5
+{
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:11pt;
+background-color:#FFFF09;
+color:#000000;
+font-style:normal;
+/* font-weight:bold;  */
+}
+.semanticweb
+{
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:11pt;
+background-color:#FF69B4;
+color:#000000;
+font-style:normal;
+}
+
+.menualtcolor
+{
+/* this is the alternating color for the menus  */
+background-color:#87ceed;
+max-width: 800px;
+word-wrap: break-word;
+}
+
+.menutitle
+{
+font-size:12pt;
+color:#0000cd;
+font-weight:bold;
+font-variant:small-caps;
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+}
+.menuitem
+{
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:10pt;
+color:#0000cd;
+}
+
+.head2
+{
+font-family : Tahoma, Arial, Helvetica, sans-serif;
+font-size : 14pt;
+font-weight : bold;
+color : red;
+border-top:black ;
+}
+.head3
+{
+font-family : Tahoma, Arial, Helvetica, sans-serif;
+font-size : 12pt;
+font-weight : bold;
+color : Blue;
+}
+.listitem
+{
+font-family : Tahoma, Arial, Helvetica, sans-serif;
+font-size : 11pt;
+color : green;
+}
+.descriptions
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10pt;
+color:black;
+width : 800px;
+}
+.update
+{
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+font-size : 9pt;
+width: 800px;
+}
+.wsh
+{
+font-size: 10pt;
+font-family: courier new;
+width: 800px;
+}
+.warning
+{
+color: red;
+}
+
+.globalatt {
+-moz-column-count : 7;
+column-count : 7;
+column-width : 100px;
+width : 800px;
+font-size: 11pt;
+}
+
+.faqheader
+{
+font-size:14pt;
+width:800px;
+background-color:#8B8682; /* seashell 4 */
+font-weight:bold;
+font-variant:large-caps;
+font-family:Century Gothic, Helvetica, sans-serif;
+}
+.faqdescription
+{
+width:800px;
+background-color:#EEE5DE; /* seashell 2 */
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:12pt;
+}
+.propertyheader
+{
+font-size:14pt;
+width:800px;
+background-color: #CD8C95; /* lightpink 3  */
+font-weight:bold;
+font-variant:large-caps;
+font-family:Century Gothic, Helvetica, sans-serif;
+}
+.propertydescription
+{
+width:800px;
+background-color: #FFB6C1; /* lightpink  */
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:12pt;
+}
+.propertylite
+{
+width:800px;
+background-color: #EEA2AD;  /* lightpink 2  */
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:11pt;
+}
+.eventsheader
+{
+font-size:14pt;
+width:800px;
+background-color: #CDAA7D; /* burlywood 3  */
+font-weight:bold;
+font-variant:large-caps;
+font-family:Century Gothic, Helvetica, sans-serif;
+}
+.eventsdescription
+{
+width:800px;
+background-color: #FFD39B; /* burlywood 1  */
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+font-size:12pt;
+}
